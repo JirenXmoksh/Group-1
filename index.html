@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face{
+            font-family: Montserrat-Bold;
+            src: url('../FEE - II/PRJEXC/assets/Fonts/Montserrat-Bold.ttf');
+        }
+        @font-face{
+            font-family: Montserrat-Medium;
+            src: url('../FEE - II/PRJEXC/assets/Fonts/Montserrat-Medium.ttf');
+        }
+        body{
+            font-family: Montserrat-Medium;
+            margin: 0px;
+            padding: 0px;
+        }
+        nav {
+            display: flex; /* Use flexbox for the navbar */
+            justify-content: space-around; /* Space between brand and nav items */
+            align-items: center; /* Center items vertically */
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.542), white, rgba(0, 0, 0, 0.542));
+            padding: 10px;
+            margin: 0px;
+            color: white;
+            border: 1px solid black;
+        }
+        
+        .brand {
+            display: flex; /* Use flexbox for brand section */
+            align-items: center; /* Center items vertically */
+        }
+        
+        .logo {
+            height: 40px; /* Adjust logo size */
+            margin-right: 10px; /* Space between logo and brand name */
+        }
+        ::placeholder{
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Use flexbox for horizontal layout */
+            color: black;
+        }
+        
+        li {
+            margin-left: 100px; /* Space between items */
+            color: black;
+        }
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+        .hero2{
+            align-items: center;
+            text-align: center;
+            font-size: 50px;
+            border: 1px solid black;
+            margin: 30px;
+            border-radius: 20px;
+            background-image: linear-gradient(to top, black, rgb(255, 80, 80), rgb(105, 105, 255));
+        }
+        .content1{
+            padding: 10px;
+        }
+        .content1 td{
+            border: 1px solid red;
+            text-align: center;
+        }
+        .box {
+
+            height: auto;
+            float: left;
+            transition: .5s linear;
+            position: relative;
+            display: block;
+            overflow: hidden;
+            padding: 15px;
+            text-align: center;
+            margin: 0 5px;
+            background: transparent;
+            text-transform: uppercase;
+          }
+          
+          .box:before {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            height: 4px;
+            width: 100%;
+            border-bottom: 4px solid transparent;
+            border-left: 4px solid transparent;
+            box-sizing: border-box;
+            transform: translateX(100%);
+          }
+          
+          .box:after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            border-top: 4px solid transparent;
+            border-right: 4px solid transparent;
+            box-sizing: border-box;
+            transform: translateX(-100%);
+          }
+          
+          .box:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          }
+          
+          .box:hover:before {
+            border-color: #262626;
+            height: 100%;
+            transform: translateX(0);
+            transition: .3s transform linear, .3s height linear .3s;
+          }
+          
+          .box:hover:after {
+            border-color: #262626;
+            height: 100%;
+            transform: translateX(0);
+            transition: .3s transform linear, .3s height linear .5s;
+          }
+          
+          button {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            background: transparent;
+          }
+          .subdiv1{
+            position: relative;
+            top: 80px;
+          }
+          .subdiv2{
+            position: relative;
+            bottom: 20px;
+          }
+          .chapter-video{
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 1.2rem;
+            margin: 2rem;
+            display: flex;
+            flex-direction: column;
+            height: 620px;
+            box-shadow:2px 1px 5px  rgb(139, 127, 127)
+        }
+        .video{
+            width: 100%;
+        }
+        iframe{
+            border-radius: 15px;
+        
+        }
+        .heading{
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            background-color: rgb(202, 59, 59);
+        }
+        .contact{
+            position: relative;
+            left: 25%;
+            cursor: pointer;
+            margin:10px;
+            background-color: rgb(69, 69, 233);
+            color: white;
+            padding: 0.3rem;
+            border-radius: 5px;
+        }
+        footer{
+            background-color: rgb(48, 48, 238);
+            display: flex;
+            color: white;
+            gap: 2rem;
+            flex-direction: column;
+        }
+        .content{
+            padding-top: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            gap: 8rem;
+        }
+        .media-link{
+            
+            display: flex;
+            gap: 2rem;
+        }
+        .policy{
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+        .links{
+            
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+        .media-link a{
+            color: white;
+        }
+        .footer{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="brand">
+            <img src="../FEE - II/PRJEXC/assets/Images/fficon.png" alt="Brand Logo" class="logo" width="45px" height="39px"> <!-- Replace with your logo path -->
+            <span class="brand-name">DRIZ Visuals</span>
+        </div>
+        <ul>
+            <li>
+                <select class="box" style="font-family: Montserrat-Medium; border: 1px solid black;  margin-top: 10px;  padding: 10px; border-radius: 5px;">
+                    <option>About DRIZ</option>
+                    <a href="#"><option>Option 1</option></a>
+                    <a href="#"><option>Option 2</option></a>
+                    <a href="#"><option>Option 3</option></a>
+                    <a href="#"><option>Option 4</option></a>
+                    <a href="#"><option>Option 5</option></a>
+                </select>
+            </li>
+            <li><a href="#" class="box">Chapters</a></li>
+            <li><a href="#" class="box">Upcoming Events</a></li>
+            <li><a href="#" class="box">Log in</a></li>
+            <li><input class="box" type="text" placeholder="Search..." style="font-family: Montserrat-Medium; padding: 2px; width: 100px; height: 30px; margin-top: 10px; border-radius: 5px"></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <center><img src="heroimg.jpg" style="margin:40px" height="500px"></center>
+        <div class="hero2">
+            <div class="subdiv1">
+                Chitkara University, Chandigarh, India
+            </div>
+            <br><br><br>
+            <div class="subdiv2">
+                <a href="#"><img src="../FEE - II/PRJEXC/assets/Images/linkedin.svg" width="30px" height="30px"></a>
+                <a href="#"><img src="../FEE - II/PRJEXC/assets/Images/insta.svg" width="30px" height="30px"></a>
+                <a href="#"><img src="../FEE - II/PRJEXC/assets/Images/fbook.svg" width="30px" height="30px"></a>
+            </div>
+        </div>
+    </div>
+    <nav style="margin: 20px; padding: 20px; border-radius: 10px; ">
+        <ul>
+            <li><a href="#" class="box">About</a></li>
+            <li><a href="#" class="box">Upcoming Events</a></li>
+            <li><a href="#" class="box">Past Events</a></li>
+            <li><a href="#" class="box">Organizers</a></li>
+            <li><a href="#" class="box">Photos</a></li>
+            <li><a href="#" class="box">Video</a></li>
+        </ul>
+    </nav>
+    <div class="about">
+        <p class="head" style="margin: 20px; font-size: 30px; border: 1px solid black; border-radius: 10px; padding: 20px; background-color: rgb(202, 59, 59); font-family: Montserrat-Bold">ABOUT</p>
+        <table class="content1" style="margin: 20px; border: 1px solid black" >
+            <tr>
+                <td style="text-align: left">
+                    <center><b>What we do: </b></center>
+                    <ol style="list-style-type:circle">
+                        <li>Hands on coding workshops</li>
+                        <li>Build side projects</li>
+                        <li>Compete in solution challenge</li>
+                        <li>Networking events</li>
+                        <li>Cloud Study jams</li>
+                    </ol>
+                </td>
+                <td >
+                    Welcome to the developer student club Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos nisi incidunt sed tempore nam ipsam exercitationem nobis aut quis aliquam excepturi esse totam, assumenda ducimus ullam magnam ut voluptatem repellendus!
+                </td>
+                <td style="text-align: left">
+                    <center><b>How to join: </b></center>
+                    <ol>
+                        <li>Create a profile</li>
+                        <li>Join the Chapter</li>
+                        <li>Get a confirmation mail</li>
+                        <li>Attend events</li>
+                        Email us at cse.dc@chitkara.edu.in for questions and more information!
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <section class="chapter-video">
+        <div class="heading">
+            <h2>CHAPTER VIDEO</h2>
+        </div>
+        <div class="video">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/EkSacqqqWNU?si=TbYmdiqVXir_mhWF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <button class="contact">Contact Us</button>
+    <footer>
+        <div class="content">
+           <ul class="policy">
+            <p>Quick Links</p>
+            <li>About</li>
+            <li>Events</li>
+            <li>Contact</li>
+           </ul>
+           <div class="links">
+                <p>Follow Us</p>
+                <ul class="media-link">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+           </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 DSC Chitkara University. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
